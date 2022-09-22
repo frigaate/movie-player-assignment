@@ -79,6 +79,7 @@ svg{
 }
 
 .movie-show .showtimes{
+    margin-top: 8px;
     width: 110px;
     padding: 10px;
     background-color: rgb(189, 207, 20);
