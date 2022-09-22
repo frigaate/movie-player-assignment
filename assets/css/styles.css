@@ -1,0 +1,132 @@
+:root{
+    --light-colour: rgb(236, 229, 229);
+    --dark-colour: rgb(37, 36, 36);
+    --svg-color: rgba(151, 144, 144, 0.904);
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+svg{
+    fill: var(--svg-color);
+}
+
+.screen{
+    width: 400px;
+    height: 800px;
+    border-radius: 40px;
+    border: 10px solid black;
+}
+
+.top-container{
+    display: flex;
+    /* padding: 5px; */
+    width: 100%;
+    height: 450px;
+    position: relative;
+    color: var(--light-colour);
+    overflow: hidden;
+}
+
+
+.image-wrapper{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    justify-self: center;
+    overflow: hidden;
+
+}
+
+.image-wrapper img{
+    overflow: hidden;
+}
+
+.now-playing{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+    top: 2%;
+}
+
+.play{
+    position: absolute;
+    top: 40%;
+    right: 38%;
+}
+
+.play svg{
+    width: 100px;
+}
+
+.movie-show{
+    position: absolute;
+    top: 70%;
+    left: 2%;
+}
+
+.movie-show .showtimes{
+    width: 100px;
+    padding: 10px;
+    background-color: rgb(189, 207, 20);
+    border-radius: 20px;
+    color: var(--dark-colour);
+    font-weight: 600;
+}
+
+.bottom{
+    border-radius: 40px;
+    width: 100%;
+    height: 40px;
+    background-color: var(--light-colour);
+    position: absolute;
+    bottom: -6%;
+    overflow: hidden;
+}
+
+.bottom-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: -50px;
+    background-color: var(--light-colour);
+    padding: 5px;
+    overflow: scroll;
+}
+
+.selected-for-you{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+.movie{
+    width: 100px;
+    height: 150px;
+    font-size: 12px;
+}
+
+.trending{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+}
